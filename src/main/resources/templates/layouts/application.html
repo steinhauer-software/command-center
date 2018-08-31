@@ -3,50 +3,42 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Mehlbox Konsole</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link th:href="@{/webjars/mdbootstrap-bootstrap-material-design/css/bootstrap.css}" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link th:href="@{/webjars/mdbootstrap-bootstrap-material-design/css/mdb.min.css}" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link th:href="@{/webjars/mdbootstrap-bootstrap-material-design/css/style.css}" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" th:href="@{/css/command-center.css}" href="/css/command-center.css" />
 </head>
 <body>
-<header layout:fragment="header">
-    <h1>My website</h1>
+<header th:replace="fragments/header :: header">
 </header>
 
 <!-- Start your project here-->
-<section layout:fragment="content">
-    <div style="height: 100vh">
-        <div class="flex-center flex-column">
-            <h1 class="animated fadeIn mb-2">Material Design for Bootstrap</h1>
-
-            <h5 class="animated fadeIn mb-1">Thank you for using our product. We're glad you're with us.</h5>
-
-            <p class="animated fadeIn text-muted">MDB Team</p>
+<main>
+    <div class="container">
+        <div class="commandcenter">
+            <div layout:fragment="content">
+            </div>
         </div>
     </div>
-</section>
+</main>
 <!-- /Start your project here-->
 
-<footer layout:fragment="footer">
+<footer th:replace="fragments/footer :: footer">
 </footer>
 
 <!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" th:href="@{/webjars/mdbootstrap-bootstrap-material-design/js/jquery-3.1.1.min.js}"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" th:href="@{/webjars/mdbootstrap-bootstrap-material-design/js/popper.min.js}"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" th:href="@{/webjars/mdbootstrap-bootstrap-material-design/js/bootstrap.min.js}"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" th:href="@{/webjars/mdbootstrap-bootstrap-material-design/js/mdb.min.js}"></script>
 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

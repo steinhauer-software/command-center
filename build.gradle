@@ -58,8 +58,6 @@ dependencies {
 
 			'org.thymeleaf.extras:thymeleaf-extras-springsecurity4',
 			'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.3.0',
-
-			'org.webjars:mdbootstrap-bootstrap-material-design:4.5.3'
 	)
 
 	runtime('org.springframework.boot:spring-boot-devtools')
