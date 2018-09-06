@@ -1,0 +1,37 @@
+dn: dc=command,dc=center
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: command
+
+dn: ou=Groups,dc=command,dc=center
+objectclass: top
+objectclass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,dc=command,dc=center
+objectclass: top
+objectclass: organizationalUnit
+ou: Users
+
+dn: ou=internal,ou=Users,dc=command,dc=center
+objectclass: top
+objectclass: organizationalUnit
+ou: internal
+
+# Password: Test#1234
+dn: cn=testus.test@command.center,ou=internal,ou=Users,dc=command,dc=center
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: qmailUser
+cn: testus.test@command.center
+mail: testus@test.local
+sn: Test
+accountStatus: active
+displayName: Testus Test
+givenName: Testus
+ou: internal
+uid: testus.test
+userPassword: {CRYPT}$6$bWrQgeWY$aNUPSpscsMi90FPPN/cJDgVFu3wkSaTwzt4oPcbXKZ4Gy8Lw.l55OD6oL6tT7enPf1B0lwJJRUEkX4tVhoWLq0

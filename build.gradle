@@ -55,9 +55,18 @@ dependencies {
 			'org.springframework.boot:spring-boot-starter-security',
 			'org.springframework.boot:spring-boot-starter-thymeleaf',
 			'org.springframework.boot:spring-boot-starter-web',
+			'org.springframework.security:spring-security-ldap',
 
 			'org.thymeleaf.extras:thymeleaf-extras-springsecurity4',
 			'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.3.0',
+
+			'com.unboundid:unboundid-ldapsdk',
+
+			'javax.inject:javax.inject:1',
+	)
+
+	annotationProcessor (
+			"org.springframework.boot:spring-boot-configuration-processor"
 	)
 
 	runtime('org.springframework.boot:spring-boot-devtools')
