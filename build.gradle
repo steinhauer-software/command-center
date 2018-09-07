@@ -34,6 +34,7 @@ plugins {
 	id 'org.springframework.boot' version '2.0.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.6.RELEASE'
 	id 'io.franzbecker.gradle-lombok' version '1.14'
+	id "org.asciidoctor.convert" version "1.5.8.1"
 }
 
 group = 'software.steinhauer'
@@ -55,9 +56,18 @@ dependencies {
 			'org.springframework.boot:spring-boot-starter-security',
 			'org.springframework.boot:spring-boot-starter-thymeleaf',
 			'org.springframework.boot:spring-boot-starter-web',
+			'org.springframework.security:spring-security-ldap',
 
 			'org.thymeleaf.extras:thymeleaf-extras-springsecurity4',
 			'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.3.0',
+
+			'com.unboundid:unboundid-ldapsdk',
+
+			'javax.inject:javax.inject:1',
+	)
+
+	annotationProcessor (
+			"org.springframework.boot:spring-boot-configuration-processor"
 	)
 
 	runtime('org.springframework.boot:spring-boot-devtools')

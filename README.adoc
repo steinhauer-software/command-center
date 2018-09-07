@@ -1,0 +1,5 @@
+= steinhauer.software Command Center
+
+My approach to get things more automated and under control.
+
+Check out _src/docs/ascidoc_for mor information.

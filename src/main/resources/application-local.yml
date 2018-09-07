@@ -1,0 +1,30 @@
+spring:
+  ldap:
+    embedded:
+      base-dn: dc=command,dc=center
+      credential:
+        username: uid=admin
+        password: secret
+      ldif: classpath:schema.ldif
+      port: 3389
+      validation:
+        enabled: false
+
+cc:
+  auth:
+    uri: ldap://localhost:3389
+    base: "dc=command,dc=center"
+    user:
+      searchBase: "ou=internal,ou=Users"
+      filter: "uid={0}"
+      dnPatterns: "cn={0}@command.center"
+    group:
+      serchBase: "ou=Groups"
+      filter: "uniqueMember={0}"
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          ldap: debug
