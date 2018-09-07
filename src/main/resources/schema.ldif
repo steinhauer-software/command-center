@@ -34,4 +34,4 @@ displayName: Testus Test
 givenName: Testus
 ou: internal
 uid: testus.test
-userPassword: {CRYPT}$6$bWrQgeWY$aNUPSpscsMi90FPPN/cJDgVFu3wkSaTwzt4oPcbXKZ4Gy8Lw.l55OD6oL6tT7enPf1B0lwJJRUEkX4tVhoWLq0
+userPassword: Test#1234

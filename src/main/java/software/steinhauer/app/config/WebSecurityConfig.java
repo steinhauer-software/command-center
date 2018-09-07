@@ -68,9 +68,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.groupSearchBase(ldapAuthConfig.getGroup().getSearchBase())
 				.groupSearchFilter(ldapAuthConfig.getGroup().getFilter())
 				.contextSource(contextSource());
-//				.passwordCompare()
-////					.passwordEncoder(new DelegatingPasswordEncoder())
-//					.passwordAttribute("userPassword");
 	}
 
 	@Bean

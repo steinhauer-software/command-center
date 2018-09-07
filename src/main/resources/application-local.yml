@@ -21,6 +21,7 @@ cc:
     group:
       serchBase: "ou=Groups"
       filter: "uniqueMember={0}"
+
 logging:
   level:
     org:
