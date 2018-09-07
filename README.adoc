@@ -2,4 +2,4 @@
 
 My approach to get things more automated and under control.
 
-Check out _src/docs/ascidoc_ for more information.
+Check out _src/docs/asciidoc_ for more information.
