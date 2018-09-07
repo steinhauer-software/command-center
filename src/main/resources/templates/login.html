@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
   ~ This file is part of Command Center.
   ~
@@ -14,5 +15,19 @@
   ~ You should have received a copy of the GNU Affero General  Public License
   ~ along with Command Center.  If not, see <https://www.gnu.org/licenses/>.
   -->
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/application}">
+<head>
+    <meta charset="UTF-8" />
+    <title>Command Center - Login</title>
+</head>
 
-<h1>Foo</h1>
+<body>
+<div layout:fragment="content">
+    <h1>Welcome <span th:text="foobar">Foo</span></h1>
+</div>
+
+</body>
+</html>
