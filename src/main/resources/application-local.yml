@@ -19,7 +19,7 @@ cc:
       filter: "uid={0}"
       dnPatterns: "cn={0}@command.center"
     group:
-      serchBase: "ou=Groups"
+      searchBase: "ou=Groups"
       filter: "uniqueMember={0}"
 
 logging:

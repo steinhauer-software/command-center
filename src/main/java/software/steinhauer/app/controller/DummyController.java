@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import software.steinhauer.app.config.LdapAuthConfigModel;
 
 import javax.inject.Inject;
+import java.security.Principal;
 
 @RestController
 @Slf4j
@@ -36,8 +37,8 @@ public class DummyController {
 	}
 
 	@GetMapping("/dummy")
-	public String foo() {
-		LOG.error("{}", ldapConfig);
+	public String foo(Principal principal) {
+		LOG.error("{}", principal);
 		return "foo";
 	}
 }

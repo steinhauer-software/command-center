@@ -46,7 +46,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// @formatter:off
 		http
 				.authorizeRequests()
-					.antMatchers("/").hasRole("CCUSER")
+					.antMatchers("/").hasAnyRole("CCUSER", "CCADMIN")
 					.antMatchers("/admin").hasRole("CCADMIN")
 					.anyRequest().fullyAuthenticated()
 				.and()

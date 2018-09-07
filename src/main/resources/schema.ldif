@@ -9,6 +9,12 @@ objectclass: top
 objectclass: organizationalUnit
 ou: Groups
 
+dn: cn=ccadmin,ou=Groups,dc=command,dc=center
+objectClass: top
+objectClass: groupOfUniqueNames
+cn: ccadmin
+uniqueMember: cn=testus.test@command.center,ou=internal,ou=Users,dc=command,dc=center
+
 dn: ou=Users,dc=command,dc=center
 objectclass: top
 objectclass: organizationalUnit
