@@ -46,11 +46,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// @formatter:off
 		http
 				.authorizeRequests()
+					.antMatchers("/css/**", "/js/**", "/images/**", "/webjars/**", "/**/favicon.ico").permitAll()
 					.antMatchers("/").hasAnyRole("CCUSER", "CCADMIN")
 					.antMatchers("/admin").hasRole("CCADMIN")
-					.anyRequest().fullyAuthenticated()
+					.anyRequest().authenticated()
 				.and()
-					.formLogin();
+					.formLogin()
+						.loginPage("/login")
+							.permitAll();
 		// @formatter:on
 	}
 
