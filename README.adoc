@@ -1,6 +1,7 @@
 = steinhauer.software Command Center
 
 image:https://travis-ci.org/steinhauer-software/command-center.svg?branch=master["Build Status", link="https://travis-ci.org/steinhauer-software/command-center"]
+image:https://snyk.io/test/github/steinhauer-software/command-center/badge.svg["Build Status", link="https://snyk.io/test/github/steinhauer-software/command-center"]
 
 My approach to get things more automated and under control.
 
